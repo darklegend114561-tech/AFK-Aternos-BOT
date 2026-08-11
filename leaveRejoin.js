@@ -48,7 +48,7 @@ function setupLeaveRejoin(bot, createBot) {
         if (stopped) return
 
         // FAST RECONNECT: 2s -> 10s (User requested faster)
-        let delay = randomMs(2000, 10000)
+        let delay = randomMs(2000, 5000)
 
         // Slight backoff for repeated failures, but keep it snappy
         reconnectAttempts++
@@ -88,16 +88,7 @@ function setupLeaveRejoin(bot, createBot) {
 
         scheduleNextJump()
 
-        leaveTimer = setTimeout(() => {
-            if (stopped) return
-            logThrottled('[AFK] Leaving server (timer)')
-            cleanup()
-            try {
-                bot.quit()
-            } catch (e) {
-                // ignore if already closed
-            }
-        }, stayTime)
+    
     })
 
     // When the connection ends for ANY reason, just clean up our timers.
