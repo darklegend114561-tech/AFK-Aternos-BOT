@@ -9,7 +9,7 @@
     "ip": "Fumblecraft.aternos.me",
     "port": 13642,
     "version": "1.20.1",
-    "try-creative": true
+    "try-creative": false
   },
   "position": {
     "enabled": true,
@@ -19,11 +19,11 @@
   },
   "utils": {
     "auto-auth": {
-      "enabled": true,
+      "enabled": false,
       "password": "SoloPlayz"
     },
     "anti-afk": {
-      "enabled": false,
+      "enabled": true,
       "sneak": true
     },
     "chat-messages": {
@@ -38,7 +38,7 @@
     },
     "chat-log": false,
     "auto-reconnect": false,
-    "auto-reconnect-delay": 2000,
+    "auto-reconnect-delay": 120000,
     "max-reconnect-delay": 120000
   },
   "movement": {
