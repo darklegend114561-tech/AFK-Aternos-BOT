@@ -9,7 +9,7 @@
     "ip": "Fumblecraft.aternos.me",
     "port": 13642,
     "version": "1.20.1",
-    "try-creative": false
+    "try-creative": true
   },
   "position": {
     "enabled": true,
@@ -36,7 +36,7 @@
         "Want Cheap Premium MC Server? https://discord.gg/VRMUnDkf95"
       ]
     },
-    "chat-log": true,
+    "chat-log": false,
     "auto-reconnect": true,
     "auto-reconnect-delay": 2000,
     "max-reconnect-delay": 120000
